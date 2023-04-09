@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyOutlinedBoxTextInputLayout" parent="@style/Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#283593</item>
+    </style>
+</resources>
