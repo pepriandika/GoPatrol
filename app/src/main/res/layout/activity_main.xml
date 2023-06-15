@@ -8,30 +8,55 @@
     android:visibility="visible"
     tools:context=".MainActivity">
 
+
+    <TextView
+        android:id="@+id/go_patrol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/go_patrol"
+        android:textAppearance="@style/go_patrol"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textInputEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/secure_your"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secure_your"
+        android:textAppearance="@style/secure_your"
+        app:layout_constraintEnd_toEndOf="@+id/go_patrol"
+        app:layout_constraintStart_toStartOf="@+id/go_patrol"
+        app:layout_constraintTop_toBottomOf="@+id/go_patrol" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusTopStart="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.48000002"
-        app:startIconDrawable="@drawable/ic_mail"
-        app:endIconMode="clear_text"
-        >
+        app:layout_constraintVertical_bias="0.36"
+        app:startIconDrawable="@drawable/ic_mail">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:hint="@string/e_mail"
             android:inputType="textEmailAddress"
-            android:textSize="16sp"
-            android:foreground="#FFFBFE"/>
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -44,14 +69,57 @@
         app:layout_constraintStart_toStartOf="@+id/textInputEmail"
         app:layout_constraintTop_toBottomOf="@+id/textInputEmail"
         app:startIconDrawable="@drawable/ic_lock"
-        app:endIconMode="password_toggle">
+        app:endIconMode="password_toggle"
+        app:boxCornerRadiusTopStart="16dp"
+        app:boxCornerRadiusTopEnd="16dp"
+        app:boxCornerRadiusBottomEnd="16dp"
+        app:boxCornerRadiusBottomStart="16dp">
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:layout_gravity="center"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <CheckBox
+        android:id="@+id/CheckBoxRemamber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#97B4FF"
+        android:focusable="auto"
+        android:padding="0dp"
+        android:text="@string/remamber_me"
+        app:layout_constraintStart_toStartOf="@+id/textInputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/textInputPassword" />
+
+    <TextView
+        android:id="@+id/LupaPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/lupa_password"
+        android:layout_margin="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/ButtonMasuk"
+        app:layout_constraintStart_toStartOf="@+id/ButtonMasuk"
+        app:layout_constraintTop_toBottomOf="@+id/ButtonMasuk"
+        />
+
+    <Button
+        android:id="@+id/ButtonMasuk"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#97B4FF"
+        android:text="Masuk"
+        app:layout_constraintEnd_toEndOf="@+id/textInputPassword"
+        app:layout_constraintStart_toStartOf="@+id/textInputPassword"
+        app:layout_constraintTop_toBottomOf="@+id/CheckBoxRemamber"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
