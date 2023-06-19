@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/navigation_home"
@@ -9,7 +10,23 @@
     <item
         android:id="@+id/navigation_message"
         android:icon="@drawable/ic_message"
-        android:title="@string/message" />
+        android:title="@string/message"
+        app:showAsAction="withText" />
 
+    <item
+        android:id="@+id/navigation_incident"
+        android:icon="@drawable/ic_alert_circle"
+        android:title="@string/incident" />
 
+    <item
+        android:id="@+id/navigation_check"
+        android:icon="@drawable/ic_check"
+        android:title="@string/check"
+        app:showAsAction="withText" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_user"
+        android:title="@string/profile"
+        app:showAsAction="withText" />
 </menu>

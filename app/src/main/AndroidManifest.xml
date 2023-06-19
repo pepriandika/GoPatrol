@@ -12,11 +12,11 @@
         android:theme="@style/Theme.GoPatrol"
         tools:targetApi="31">
         <activity
-            android:name=".BottomNavActivity"
+            android:name=".ui.activity.BottomNavActivity"
             android:exported="false"
             android:label="@string/title_activity_bottom_nav" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".ui.activity.SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.activity.LoginActivity"
             android:exported="false" />
     </application>
 

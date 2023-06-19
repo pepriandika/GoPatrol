@@ -12,14 +12,26 @@
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.firstproject.gopatrol.ui.dashboard.DashboardFragment"
+        android:id="@+id/navigation_message"
+        android:name="com.firstproject.gopatrol.ui.message.MessageFragment"
         android:label="@string/pesan"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_message" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.firstproject.gopatrol.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_incident"
+        android:name="com.firstproject.gopatrol.ui.incident.IncidentFragment"
+        android:label="@string/title_incident"
+        tools:layout="@layout/fragment_incident" />
+
+    <fragment
+        android:id="@+id/navigation_check"
+        android:name="com.firstproject.gopatrol.ui.fragment.check.CheckFragment"
+        android:label="@string/tittle_check"
+        tools:layout="@layout/fragment_check"/>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.firstproject.gopatrol.ui.fragment.profile.ProfileFragment"
+        android:label="@string/tittle_profile"
+        tools:layout="@layout/fragment_profile"/>
 </navigation>
